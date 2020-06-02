@@ -39,7 +39,11 @@ print(f"Start date (TBC): {scare_science.commencement}")
 print(f"Students enrolled as of yesterday: {scare_science.register}")
 
 print("-----------")
-scare_science.append_register(student10001.name)
-scare_science.append_register(student10002.name)
-scare_science.append_register(student10003.name)
-print(f"Students enrolled to date: {scare_science.register}")
+scare_science.append_register(student10001)
+scare_science.append_register(student10002)
+scare_science.append_register(student10003)
+
+print(f"Students enrolled to date:")
+for n in scare_science.register:
+    print(n.name)
+
