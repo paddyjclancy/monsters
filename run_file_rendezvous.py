@@ -26,4 +26,7 @@ scare_science.append_register(student10002)
 print(f"Students enrolled in course - {scare_science.module} ({scare_science.module_code}):")
 for n in scare_science.register:
     print(n.name, ":  ", n.age)
-    print(n.skills)
+    print("Current skills portfolio:")
+    for i in n.skills:
+        print(f"   -{i}")
+    print("---------")
